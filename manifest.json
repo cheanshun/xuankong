@@ -1,0 +1,26 @@
+{
+  "name": "玄空飞星排盘",
+  "short_name": "玄空飞星",
+  "description": "中州派安星法 · 九宫飞星 · 立极规 · 排龙诀 · 收山出煞",
+  "start_url": "https://cheanshun.github.io/xuankong/",
+  "scope": "https://cheanshun.github.io/xuankong/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F2EAD9",
+  "theme_color": "#2C261D",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
