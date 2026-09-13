@@ -312,7 +312,10 @@ select{appearance:auto;cursor:pointer}
   .sn-num{font-size:22px}
   .sn-num.yun{font-size:28px}
   .sn-num.flow{font-size:16px}
-  /* 手机端视图导航：4列网格+分隔线（缝隙即线条），5按钮4+1，完整可见 */
+  /* 手机端工具行：下载|复位|画户型图 等宽三列 */
+  .chart-tools{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;width:100%}
+  .chart-tools .tool-btn{display:flex;align-items:center;justify-content:center;width:100%;margin:0;min-height:36px;padding:6px 2px;font-size:12px;text-align:center;white-space:nowrap}
+  /* 手机端视图导航：4列网格+分隔线（缝隙即线条），4按钮一行 */
   .view-toggle{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;padding:1px;width:100%;max-width:100%;background:rgba(38,34,27,.22);border:1px solid rgba(38,34,27,.3);border-radius:6px;overflow:hidden}
   .view-toggle button,.view-toggle a{min-width:0;white-space:nowrap;padding:9px 4px;font-size:13px;text-align:center;justify-content:center;background:#F7EED9;border:none;border-radius:0}
   .view-toggle a{background:linear-gradient(135deg,#C9A24B,#E3CE93);color:#2A2315}
@@ -780,7 +783,6 @@ footer .c-div{color:rgba(212,162,74,.45);margin:0 7px;font-size:10px}
             <button type="button" data-view="liji">立极规</button>
             <button type="button" data-view="pai">排龙诀</button>
             <button type="button" data-view="plan">户型图</button>
-            <a href="huxing.html" target="_blank" rel="noopener" title="画户型图（独立工具，新标签打开）" style="display:inline-flex;align-items:center;padding:7px 14px;font-family:var(--serif);font-size:13.5px;color:#2A2315;letter-spacing:.08em;text-decoration:none;transition:all .15s;background:linear-gradient(135deg,#C9A24B,#E3CE93);border-left:1px solid var(--line)">画户型图</a>
           </div>
           <div class="chart-legend">
             <span class="legend-item"><span class="dot yun"></span>运星</span>
@@ -790,6 +792,7 @@ footer .c-div{color:rgba(212,162,74,.45);margin:0 7px;font-size:10px}
           <div class="chart-tools">
             <button type="button" class="tool-btn primary" id="dlPng">下载透明 PNG</button>
             <button type="button" class="tool-btn" id="resetRot">复位方向</button>
+            <a href="huxing.html" target="_blank" rel="noopener" title="画户型图（独立工具，新标签打开）" class="tool-btn" style="background:linear-gradient(135deg,#C9A24B,#E3CE93);color:#2A2315;border-color:#C9A24B;font-family:var(--serif);letter-spacing:.08em">画户型图</a>
           </div>
           <div class="plan-tools" id="planTools">
             <button type="button" class="tool-btn primary" id="planUploadBtn">上传户型图</button>
