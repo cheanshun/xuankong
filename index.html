@@ -312,9 +312,11 @@ select{appearance:auto;cursor:pointer}
   .sn-num{font-size:22px}
   .sn-num.yun{font-size:28px}
   .sn-num.flow{font-size:16px}
-  /* 手机端视图导航：4列网格，5按钮4+1均衡排列，完整可见 */
-  .view-toggle{display:grid;grid-template-columns:repeat(4,1fr);width:100%;max-width:100%}
-  .view-toggle button,.view-toggle a{min-width:0;white-space:nowrap;padding:8px 4px;font-size:13px;text-align:center;justify-content:center}
+  /* 手机端视图导航：4列网格+分隔线（缝隙即线条），5按钮4+1，完整可见 */
+  .view-toggle{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;padding:1px;width:100%;max-width:100%;background:rgba(38,34,27,.22);border:1px solid rgba(38,34,27,.3);border-radius:6px;overflow:hidden}
+  .view-toggle button,.view-toggle a{min-width:0;white-space:nowrap;padding:9px 4px;font-size:13px;text-align:center;justify-content:center;background:#F7EED9;border:none;border-radius:0}
+  .view-toggle a{background:linear-gradient(135deg,#C9A24B,#E3CE93);color:#2A2315}
+  .view-toggle button:focus-visible,.view-toggle a:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
 }
 .star-line{display:flex;align-items:center;gap:8px}
 .star-line .lab{font-size:11px;color:var(--ink-3);width:16px;letter-spacing:.05em;flex-shrink:0}
