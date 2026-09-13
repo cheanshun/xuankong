@@ -312,6 +312,11 @@ select{appearance:auto;cursor:pointer}
   .sn-num{font-size:22px}
   .sn-num.yun{font-size:28px}
   .sn-num.flow{font-size:16px}
+  /* 手机端视图导航：横向滑动，不拥挤不错位 */
+  .view-toggle{display:flex;flex-wrap:nowrap;overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .view-toggle::-webkit-scrollbar{display:none}
+  .view-toggle button,.view-toggle a{flex:0 0 auto;white-space:nowrap;padding:7px 11px;font-size:13px}
+  .view-toggle a{border-left:1px solid var(--line)}
 }
 .star-line{display:flex;align-items:center;gap:8px}
 .star-line .lab{font-size:11px;color:var(--ink-3);width:16px;letter-spacing:.05em;flex-shrink:0}
